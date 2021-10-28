@@ -1,8 +1,8 @@
 import "../Sass/App.sass";
-// React
+import Sidebar from "./components/Sidebar";
 import React, { useState, useEffect } from "react";
-// Assets
 import logo from "../../Assets/logo.svg";
+
 const App: React.FunctionComponent = () => {
   const [countHookExample, setCountHookExample] = useState<number>(0);
 
@@ -25,6 +25,7 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
+      <Sidebar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
