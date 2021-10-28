@@ -3,18 +3,13 @@ import "../Sass/App.sass";
 import React, { useState, useEffect } from "react";
 // Assets
 import logo from "../../Assets/logo.svg";
-
-export default function App() {
-  // you should always use function components!
-  // class components are practically deprecated
-
-  // state hooks replace the the state in a function component
-  const [countHookExample, setCountHookExample] = useState(0);
+const App: React.FunctionComponent = () => {
+  const [countHookExample, setCountHookExample] = useState<number>(0);
 
   // effect hooks replace the lifecycle methods in a function component
   useEffect(
     () => {
-      console.log("mouted");
+      console.log("mounted");
       return () => {
         console.log("exited");
       };
@@ -57,4 +52,6 @@ export default function App() {
       </header>
     </div>
   );
-}
+};
+
+export default App;
