@@ -1,13 +1,11 @@
 import "../Sass/App.sass";
 import Sidebar from "./components/Sidebar";
 import React, { useState, useEffect } from "react";
-import logo from "../../Assets/logo.svg";
+// import logo from "../../Assets/logo.svg";
 import Notebook from "./components/Notebook";
 import Editor from "./components/Editor";
 
 const App: React.FunctionComponent = () => {
-  const [countHookExample, setCountHookExample] = useState<number>(0);
-
   // effect hooks replace the lifecycle methods in a function component
   useEffect(
     () => {
