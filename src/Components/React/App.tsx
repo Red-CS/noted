@@ -1,6 +1,6 @@
 import "../Sass/App.sass";
 import Sidebar from "./components/Sidebar";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 // import logo from "../../Assets/logo.svg";
 import Notebook from "./components/Notebook";
 import Editor from "./components/Editor";
@@ -25,7 +25,10 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <div className="Tri-Modal">
+      <div
+        className="Tri-Modal"
+        style={{ backgroundColor: "blue", padding: "50px" }}
+      >
         <Sidebar />
         <Notebook />
         <Editor />
