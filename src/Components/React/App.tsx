@@ -25,10 +25,7 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <div
-        className="Tri-Modal"
-        style={{ backgroundColor: "blue", padding: "50px" }}
-      >
+      <div className="Tri-Modal">
         <Sidebar />
         <Notebook />
         <Editor />
